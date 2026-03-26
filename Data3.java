@@ -1,16 +1,16 @@
 import java.util.*;
 import java.io.*;
 
-public class Data2A {
+public class Data3 {
     public static void main(String[] args)  throws FileNotFoundException {
-        ArrayList<String> words = new ArrayList<String>();
-        File s = new File("data2.txt");
+        ArrayList<Integer> nums = new ArrayList<Integer>();
+        File s = new File("data3.txt");
         Scanner scan = new Scanner(s);
         while(scan.hasNext()){
-            words.add(scan.next());
+            nums.add(scan.nextInt());
         }
         scan.close();
-        for (String e: words ){
+        for (Integer e: nums ){
             System.out.println(e);
         }
         
@@ -19,5 +19,4 @@ public class Data2A {
 
 
     }
-
 }

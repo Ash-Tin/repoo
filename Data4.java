@@ -1,23 +1,17 @@
 import java.util.*;
 import java.io.*;
 
-public class Data2A {
+public class Data4 {
     public static void main(String[] args)  throws FileNotFoundException {
-        ArrayList<String> words = new ArrayList<String>();
-        File s = new File("data2.txt");
+        ArrayList<Double> nums = new ArrayList<Double>();
+        File s = new File("data4.txt");
         Scanner scan = new Scanner(s);
         while(scan.hasNext()){
-            words.add(scan.next());
+            nums.add(scan.nextDouble());
         }
         scan.close();
-        for (String e: words ){
+        for (Double e: nums ){
             System.out.println(e);
-        }
-        
-        
-        
-
-
+        }                       
     }
-
 }
